@@ -1,0 +1,195 @@
+.game-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #e0f2fe, #f3e8ff);
+  border-radius: 32px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #1d1f21;
+  margin-bottom: 18px;
+}
+
+.small-label {
+  margin: 0 0 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.game-title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.05;
+}
+
+.score-chip {
+  background: #fff8c6;
+  padding: 12px 18px;
+  border-radius: 18px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.canvas-panel {
+  display: grid;
+  gap: 20px;
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.05);
+}
+
+.target-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #cbf3f0, #fef9c7);
+  padding: 18px;
+  border: 2px dashed #f0b3ff;
+}
+
+.target-label {
+  font-size: 14px;
+  color: #4b5563;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.target-letter {
+  font-size: 120px;
+  font-weight: 900;
+  color: #334155;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.option-button {
+  border: none;
+  height: 120px;
+  border-radius: 28px;
+  font-size: 56px;
+  font-weight: 800;
+  color: #1f2937;
+  cursor: pointer;
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.option-button:hover:not(:disabled) {
+  transform: translateY(-4px);
+}
+
+.option-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.action-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.action-button {
+  border: none;
+  padding: 14px 26px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #7dd3fc, #2dd4bf);
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 16px 24px rgba(15, 23, 42, 0.12);
+}
+
+.action-button.soft {
+  background: #fff6f6;
+  color: #be123c;
+  border: 1px solid #fca5a5;
+}
+
+.feedback-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 18px 22px;
+  border-radius: 24px;
+  background: #f8fafc;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.feedback-card.good {
+  border: 1px solid #34d399;
+  background: #ecfdf5;
+}
+
+.feedback-card.bad {
+  border: 1px solid #f87171;
+  background: #fef2f2;
+}
+
+.feedback-emoji {
+  font-size: 42px;
+}
+
+.feedback-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feedback-small {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: #475569;
+}
+
+.practice-panel {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #d9f99d, #bae6fd);
+  text-align: center;
+}
+
+.practice-bubble {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 84px;
+  font-weight: 900;
+  color: #111827;
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.12);
+}
+
+.practice-tip {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
